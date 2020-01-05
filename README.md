@@ -1,2 +1,2 @@
-# cashbackapi
+# Cashback API
 API Cashback.
