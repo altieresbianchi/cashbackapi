@@ -2,14 +2,15 @@
 API Cashback.
 
 # Ambiente Demonstração
-https://cashbackapi.herokuapp.com/api
+- **Localhost:** http://localhost:8080/api
+- **Remoto:** https://cashbackapi.herokuapp.com/api
 
 # Endpoints
 **Home**
 - **GET**  **/v1/** *(Endpoint base)*
 
 **Login**
-- **POST**  **/v1/login** *(Login de revendedor por cpf e senha (Parâmetros: cpf, senha))*
+- **POST**  **/v1/login** *(Login de revendedor (Parâmetros: cpf, senha))*
 
 **Revendedor**
 - **GET**    **/v1/revendedores/** *(Lista de revendedores cadastrados)*
