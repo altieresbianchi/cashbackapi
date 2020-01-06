@@ -1,7 +1,7 @@
 const app = require('./config/custom-express');
 
+/*
 const expressSwagger = require('express-swagger-generator')(app);
-
 let options = {
     swaggerDefinition: {
         info: {
@@ -30,6 +30,7 @@ let options = {
     files: ['./src/routes/*.js', './src/controllers/*.js'] //Path to the API handle folder
 };
 expressSwagger(options)
+*/
 
 // Inicia o server
 var porta = process.env.PORT || 8080;

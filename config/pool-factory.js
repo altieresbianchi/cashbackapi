@@ -1,9 +1,6 @@
 const mysql = require('mysql');
 
-/*
- * const connection = mysql.createConnection({ host: '142.4.8.175', port: 3306,
- * user: 'mime_cashback', password: 'cashback', database: 'mime_cashback' });
- */
+// Banco remoto
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: '142.4.8.175',
@@ -13,6 +10,7 @@ const pool = mysql.createPool({
     database: 'mime_cashback'
 });
 /*
+// Banco local
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: 'localhost',
