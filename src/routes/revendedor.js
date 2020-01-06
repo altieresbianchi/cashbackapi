@@ -10,6 +10,7 @@ var controller = require('../controllers/revendedorController');
 models.post('/', controller.postCreate); // Sem autenticacao
 models.get('/', auth, controller.getList);
 models.get('/:cpf', auth, controller.getById);
+models.get('/:cpf/cashback', auth, controller.getCashback);
 models.put(	'/:cpf', auth, controller.putUpdate);
 models.delete('/:cpf', auth, controller.deleteById);
 

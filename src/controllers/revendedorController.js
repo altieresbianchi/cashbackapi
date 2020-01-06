@@ -51,6 +51,23 @@ exports.getById = function(req, res, next) {
     });
 };
 
+exports.getCashback = function(req, res, next) {
+	// param
+    var cpf = (req.params.cpf ? req.params.cpf.replace(/[^0-9]/g, '') : null);
+	
+    var query = 'SELECT IF(SUM(valor) IS NULL, 0, SUM(valor)) as cashback FROM compra WHERE cpf = ?';
+	//console.log('query: ' + query)
+		
+	req.connection.query(query, [cpf], (err, [result]) => {
+	  if(err) {
+		  formatResult(res, 500, err, null);
+		  
+	  } else {
+		  formatResult(res, 200, 'Total cashback retornado com sucesso!', result);
+	  }
+    });
+}
+
 exports.postCreate = function(req, res, next) {
 	var cpf = (req.fields.cpf ? req.fields.cpf.replace(/[^0-9]/g, '') : null);
 	var nome = (req.fields.nome ? req.fields.nome : null);
