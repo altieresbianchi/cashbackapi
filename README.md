@@ -14,6 +14,7 @@ https://cashbackapi.herokuapp.com/api
 **Revendedor**
 - **GET**    **/v1/revendedores/** *(Lista de revendedores cadastrados)*
 - **GET**    **/v1/revendedores/:cpf** *(Busca revendedor pelo cpf)*
+- **GET**    **/v1/revendedores/:cpf/cashback** *(Busca o cashback total do revendedor pelo cpf)*
 - **POST**   **/v1/revendedores/** *(Cadastra um novo revendedor (Parâmetros: cpf, nome, email, senha))*
 - **PUT**    **/v1/revendedores/:cpf** *(Edita um revendedor (Parâmetros: nome, email, senha))*
 - **DELETE**  **/v1/revendedores/:cpf** *(Exclui um revendedor)*
