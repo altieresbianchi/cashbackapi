@@ -1,5 +1,5 @@
 # Cashback API
-API Cashback.
+API Cashback desenvolvida em Node.js.
 
 # Ambiente Demonstração
 - **Localhost:** http://localhost:8080/api
