@@ -12,18 +12,18 @@ const compra = require('./compra');
 // Require controller
 var loginController = require('../controllers/loginController');
 
+//Login
+routes.post('/v1/login', loginController.postLogin);
+
 // Rotas internas
 routes.use('/v1/revendedores', revendedor);
 routes.use('/v1/compras', auth, compra); // Todas as rotas com autenticacao
-
-// Login
-routes.post('/v1/login', loginController.postLogin);
 
 // Cashback acumulado
 routes.get('/v1/cashback/:cpf', auth, (req, res) => {
 	try {
 		// Pega o CPF
-		var cpf = req.params.cpf;
+		var cpf = (req.params.cpf ? req.params.cpf.replace(/[^0-9]/g, '') : null);
 		
 		//console.log(cpf)
 		//console.log(config.get('externalApiToken'))

@@ -117,6 +117,8 @@ exports.postCreate = function(req, res, next) {
 exports.putUpdate = function(req, res, next) {
 	// param
 	var cpf = (req.params.cpf ? req.params.cpf.replace(/[^0-9]/g, '') : null);
+	
+	// Campos
 	var nome = (req.fields.nome ? req.fields.nome : null);
 	var email = (req.fields.email ? req.fields.email : null);
 	var senha = (req.fields.senha ? req.fields.senha : null);
