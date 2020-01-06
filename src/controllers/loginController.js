@@ -10,6 +10,16 @@ function formatResult(res, code, message, data) {
 	});
 }
 
+/**
+ * Login do revendedor.
+ * @route POST /v1/login
+ * @group revendedor - Operações do revendedor
+ * @param {string} cpf.form.required - CPF - ex: 12345678901 (https://julio.li/b/2016/10/15/express-api-swagger/)
+ * @param {string} senha.form.required - Senha
+ * @returns {object} 200 - Objeto JSON com os dados do usuário.
+ * @returns {Error}  401 - Login ou senha incorretos.
+ * @returns {Error}  500 - Erro interno.
+ */
 exports.postLogin = function(req, res, next) {
 	var cpf = req.fields.cpf;
 	var senha = req.fields.senha;

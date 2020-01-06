@@ -28,7 +28,7 @@ API Cashback.
 - **DELETE**  **/v1/compras/:codigo** *(Exclui uma compra)*
 
 **Cashback**
-- **GET**  **/v1/cashback/:cpf** *(Retorna o saldo de cashback do revendedor buscando pelo CPF na API externa fornecida pelo grupo Boticário)*
+- **GET**  **/v1/cashback/:cpf** *(Retorna o saldo de cashback do revendedor buscando pelo CPF na API externa fornecida pelo solicitante)*
 
 &nbsp;
 &nbsp;
