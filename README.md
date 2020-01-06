@@ -5,6 +5,13 @@ API Cashback.
 - **Localhost:** http://localhost:8080/api
 - **Remoto:** https://cashbackapi.herokuapp.com/api
 
+# Collection Postman
+https://www.getpostman.com/collections/c20c6a727886b1d6f22e
+
+Configuração do Environment:
+- **BASE_DOMAIN** *(URL do ambiente)*
+- **TOKEN** *(Token gerado no login)*
+
 # Endpoints
 **Home**
 - **GET**  **/v1/** *(Endpoint base)*
