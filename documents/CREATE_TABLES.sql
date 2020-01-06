@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `cashback`.`compra` (
   `data_compra` DATE NULL,
   `data_atualizacao` TIMESTAMP NULL,
   PRIMARY KEY (`codigo`),
-  INDEX `fk_compra_revendedor_idx` (`cpf` ASC) VISIBLE,
+  INDEX `fk_compra_revendedor_idx` (`cpf` ASC),
   CONSTRAINT `fk_compra_revendedor`
     FOREIGN KEY (`cpf`)
     REFERENCES `cashback`.`revendedor` (`cpf`)
