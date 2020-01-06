@@ -72,7 +72,7 @@ routes.get('/v1/cashback/:cpf', auth, (req, res) => {
 routes.get('/v1/', (req, res) => {
 	res.status(200).json({
 		"statusCode": 200,
-		"message": "API Cashback",
+		"message": "Cashback API - Teste prático.",
 		"data": null,
 	});
 });
