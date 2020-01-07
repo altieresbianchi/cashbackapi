@@ -1,5 +1,12 @@
 # Cashback API
-API Cashback desenvolvida em Node.js.
+API Cashback.
+
+# Linguagem
+**Node.js**
+
+# Banco de dados
+**MySql**<br/>
+Obs.: Os dados (script CREATE TABLES e DER em Workbench se encontram na pasta documents).
 
 # Ambiente Demonstração
 - **Localhost:** http://localhost:8080/api
